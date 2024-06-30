@@ -50,19 +50,24 @@
 todos=[]
 numerospares = []
 numerosimpares = []
-for (let i=0; i<=19; i++){
-    let numero = prompt("Digite 20 numeros: ")
+for (let i=1; i<=20; i++){
+    let numero = Number(prompt("Digite 20 numeros: "))
     todos.push(numero)
-    if(i%2===0){
+    if(numero%2==0){
         numerospares.push(numero)
-        console.log(i)
+        
     }
-    else{}
+    else{
+
         numerosimpares.push(numero)
-        console.log(i)
+        
         console.log(numero)
 }
+}
 
+console.log(todos)
+console.log(numerospares)
+console.log(numerosimpares)
 
 
 
