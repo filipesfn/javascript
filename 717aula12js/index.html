@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documento Secreto do Mateus</title>
+</head>
+<body>
+
+    <ul id="pessoas"></ul>
+
+    <script>
+    let pessoas = ["Mateus", "Marcos", "Lucas", "João", "Judas", "Pedro"];
+    
+    pessoas.splice (4,1, "Paulo") 
+    
+    console.log(pessoas)
+
+    let $pessoas = document.getElementById("pessoas")
+
+    pessoas.forEach((p) => {
+        console.log("outraiteração")
+        $pessoas.innerHTML+=`<li>${p}</li>`
+})
+
+    </script>
+
+
+  <script src="./script.js"></script>
+</body>
+</html>
